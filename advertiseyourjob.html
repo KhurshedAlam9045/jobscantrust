@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs You Can Trust</title>
+    <!--The bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--The Link CDN Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <!--The CDN Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        /* Adding custom color and shadow to the inputs */
+        input.form-control {
+            background-color: #EEEEEE;
+            border: 1px solid #ced4da;
+        }
+
+        /* Custom focus state for inputs */
+        input.form-control:focus {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+            outline: none;
+            border-bottom: 2px solid deepskyblue;
+        }
+
+        .form-label {
+            color: #575757;
+            font-size: 0.9rem;
+
+        }
+
+        /* Placeholder color */
+        input::placeholder {
+            color: #0777A5;
+        }
+
+
+        .row-inline {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row-inline .col {
+            flex: 1;
+        }
+
+        .col+.col {
+            margin-left: 10px;
+        }
+
+        /* Styling for the payment summary box */
+        .payment-summary {
+            background-color: #F0F0F0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-summary h1 {
+            color: #333;
+        }
+
+
+        .job-counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .job-counter input {
+            width: 50px;
+            text-align: center;
+        }
+
+        /* Aligning discount and its value side by side */
+        .discount-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Left aligning tax and other details */
+        .payment-details h4,
+        .payment-details p {
+            text-align: left;
+        }
+
+        /* Icon inside the card input */
+        /* .input-group-text {
+                background-color: transparent;
+                border: none;
+            } */
+    </style>
+</head>
+<body>
+    <!---=====================The Header Section start============================--->
+    <!----top header start----->
+    
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12"></div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-1">
+                    <div id="view-bg">
+                        <p>View Our Jobs Digital Monthly Magazines</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-1">
+                    <div class="d-flex justify-content-end gap-2">
+                        <a href="" class="text-decoration-none" id="view-bg1">Job Seekers Login</a>
+                        <a href="" class="text-decoration-none" id="view-bg2">Recruiters Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----top header ends----->
+    <!--The Botton header start link-->
+    <nav class="navbar navbar-expand-lg sticky sticky-top" data-bs-toggle="sticky-onscroll" style="padding:0px;margin:0px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="" style="max-height:3.5rem;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" style="background-color:rgba(24, 158, 214, 1);">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" style="font-size: 0.8rem;font-weight:bold;">
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page"
+                            href="index.html" style="color:  rgba(102, 189, 0, 1);">HOME</a>
+                            
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="advertiseyourjob.html">ADVERTISE YOUR
+                            JOBS</a>
+
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="cvlibrary.html">CV LIBRARY</a>
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="helpfulcareer.html">HELPFUL CAREER
+                            ADVICE</a>
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="jobdescription.html">JOB DESCRIPTIONS</a>
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="submityourcv.html">SUBMIT YOUR CV</a>
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">OUR OTHER WEBSITES</a>
+                    </li><div class="heighttop"></div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="contactus.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--The Botton header ends link-->
+<!---=====================The Header Section ends============================--->
+<!---=======================The Fixed button right side start======================-->
+      <div class="fix-right-side-btn">
+        Jobs 900 You Tube Videos
+      </div>
+<!---=======================The Fixed button right side ends======================-->
+
+<div class="advertise-hero">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 mb-3"></div>
+            <div class="col-lg-7 col-md-12 col-sm-12 mb-3">
+                <div class="right-txt">
+                    <h2 style="color:rgba(51, 51, 51, 1);font-weight:900;">Hire With Confidence</h2>
+
+                </div>
+                <div class="box-right-sl">
+                    <div class="row">
+                        <div class="col-md-8 p-3">
+                            <p
+                                style="color:rgba(255,255,255,1);margin-left:1.5rem;text-align:justify;font-size:1.1rem;font-weight:700;">
+                                About the £100.00 referral reward for recommending other businesses to sign up for the
+                                advertising package. </p>
+                            <p
+                                style="color:rgba(255,255,255,1);margin-left:1.5rem;text-align:justify;font-size:1rem;font-weight:600;">
+                                Do you require customised job adverts solutions - If so </p>
+                            <p style="color:rgba(255,255,255,1);margin-left:1.5rem;text-align:justify;font-size:1rem;">
+                                To advertise your job <a href="" class="text-decoration-none text-white">Click
+                                    Here</a></p>
+                            <div class="d-flex gap-3">
+                                <a href="" id="right-send-email">Email Us</a>
+                                <a href="" id="right-send-email">Call Us</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---The Advertise Job Section start--->
+<div class="advertise-section bg-white pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center" style="color:rgba(51, 51, 51, 1);font-weight:900;">Advertise Your Jobs</h2>
+                <div class="float-end">
+                    <img src="Rectangle 24 (1).png" alt="" class="img-fluid"
+                        id="advertise-fix-bg">
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12 tp12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 pt-5 first-order">
+                        <p style="text-align: justify;color:rgba(0, 0, 0, 1);line-height:2rem;">You will receive 14 X
+                            months facility
+                            where you can place all types of your complete staff
+                            vacancies.</p>
+                        <p style="text-align: justify;color:rgba(0, 0, 0, 1);line-height:2rem;">For your benefit - The
+                            price to advertise all your job vacancies
+                            on our successful jobs
+                            website is just £ 17890.00 + vat for a complete 14 X months period reduced from £ 2,785.90 +
+                            vat. </p>
+                        <a href="" id="buy-nowbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Buy
+                            Now</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 order-first order-sm-1">
+                        <img src="advertiserightimage.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+        </div>
+    </div>
+</div>
+<!---The Advertise Job Section end--->
+<!----The Excluxive offer section start--->
+<div class="excluxive-offer">
+    <div class="container" style="max-width:1200px;">
+        <div class="row">
+            <div class="col-lg-12 com-md-12 sm-12">
+                <h2 class="text-center" style="color:rgba(51, 51, 51, 1);font-weight:900;">View All Exclusive Offers
+                </h2>
+            </div>
+            <!----The Card Section start--->
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="row mt-5" style="margin-left:2.2rem;">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4 text-center justify-content-center">
+                        <div class="card bg-white shadow" style="border: none;max-width:15rem;">
+                            <img src="simplesupport.png" alt=""
+                                class="img-fluid simplesuport">
+                        </div>
+                        <div class="bg-botton">Simple Set-up</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4 text-center">
+                        <div class="card bg-white shadow" style="border: none;max-width:15rem;">
+                            <img src="oriagnalsupport.png" alt=""
+                                class="img-fluid simplesuport">
+                        </div>
+                        <div class="bg-botton">Ongoing Support</div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-4 text-center">
+                        <div class="card bg-white shadow" style="border: none;max-width:15rem;">
+                            <img src="firesuccess.png" alt=""
+                                class="img-fluid simplesuport">
+                        </div>
+                        <div class="bg-botton">Sure Fire-Success</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <!----The Card Section ends--->
+        </div>
+    </div>
+</div>
+<!---The Excluxive Job Section start --->
+
+<!--The Our Services offer section start-->
+<div class="our-services-offer-section">
+    <div class="container" style="max-width: 1200px;">
+        <div class="row">
+            <div class="col-lg-12 mb-3">
+                <h2 class="text-center mb-3" style="color:rgba(51, 51, 51, 1);font-weight:900;">Our Service Offerings
+                </h2>
+                <p class="text-center" style="color: rgba(142, 147, 156, 1);line-height:1.2rem;text-align:justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card bg-white p-3" style="border: none;">
+                            <div class="div-box">
+                                <img src="jobmaching.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center"
+                                    style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Job Matching
+                                </p>
+                                <p style="color:rgba(142, 147, 156, 1);text-align:justify;line-height:1.4rem;">Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            </div>
+                            <div class="card-text text-center">
+                                <a href="" class="text-center"
+                                    style="color:rgba(7, 119, 165, 1);text-decoration:none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card bg-white p-3" style="border: none;">
+                            <div class="div-box">
+                                <img src="resumebuilding.png" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center"
+                                    style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Resume Building
+                                </p>
+                                <p style="color:rgba(142, 147, 156, 1);text-align:justify;line-height:1.4rem;">Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            </div>
+                            <div class="card-text text-center">
+                                <a href="" class="text-center"
+                                    style="color:rgba(7, 119, 165, 1);text-decoration:none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card bg-white p-3" style="border: none;">
+                            <div class="div-box">
+                                <img src="CareerCounseling.png" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center"
+                                    style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Career
+                                    Counseling
+                                </p>
+                                <p style="color:rgba(142, 147, 156, 1);text-align:justify;line-height:1.4rem;">Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            </div>
+                            <div class="card-text text-center">
+                                <a href="" class="text-center"
+                                    style="color:rgba(7, 119, 165, 1);text-decoration:none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card bg-white p-3" style="border: none;">
+                            <div class="div-box">
+                                <img src="interviewpraparation.png" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center"
+                                    style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Interview
+                                    Preparation
+                                </p>
+                                <p style="color:rgba(142, 147, 156, 1);text-align:justify;line-height:1.4rem;">Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            </div>
+                            <div class="card-text text-center">
+                                <a href="" class="text-center"
+                                    style="color:rgba(7, 119, 165, 1);text-decoration:none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card bg-white p-3" style="border: none;">
+                            <div class="div-box">
+                                <img src="salarybanchmarking.png" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center"
+                                    style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Salary
+                                    Benchmarking
+                                </p>
+                                <p style="color:rgba(142, 147, 156, 1);text-align:justify;line-height:1.4rem;">Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            </div>
+                            <div class="card-text text-center">
+                                <a href="" class="text-center"
+                                    style="color:rgba(7, 119, 165, 1);text-decoration:none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card bg-white p-3" style="border: none;">
+                            <div class="div-box">
+                                <img src="companyreview.png" alt=""
+                                    class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <p class="text-center"
+                                    style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Company Reviews
+                                </p>
+                                <p style="color:rgba(142, 147, 156, 1);text-align:justify;line-height:1.4rem;">Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                            </div>
+                            <div class="card-text text-center">
+                                <a href="" class="text-center"
+                                    style="color:rgba(7, 119, 165, 1);text-decoration:none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+        </div>
+
+    </div>
+</div>
+<!--The Our Services offer section ends-->
+
+<!---The Our discovery section start--->
+<div class="discover-section pt-5 pb-3">
+    <div class="container" style="max-width:1200px;">
+        <div class="row">
+            <div class="col-lg-12 mb-3">
+                <h2 class="text-center mb-3" style="color:rgba(51, 51, 51, 1);font-weight:900;">Discovering the Our
+                    Value
+                </h2>
+                <p class="text-center" style="color: rgba(142, 147, 156, 1);line-height:1.2rem;text-align:justify;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card p-4" style="background-color:rgba(235, 237, 240, 1);border:none;">
+                            <img src="image/target.png" alt=""
+                                class="img-fluid dicover-img">
+                            <div class="card-body text-center">
+                                <p style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Integrity</p>
+                                <p style="color: rgba(142, 147, 156, 1);text-align:justify;">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card p-4" style="background-color:rgba(235, 237, 240, 1);border:none;">
+                            <img src="innovation.png" alt=""
+                                class="img-fluid dicover-img">
+                            <div class="card-body text-center">
+                                <p style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Innovation</p>
+                                <p style="color: rgba(142, 147, 156, 1);text-align:justify;">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card p-4" style="background-color:rgba(235, 237, 240, 1);border:none;">
+                            <img src="empowerment.png" alt=""
+                                class="img-fluid dicover-img">
+                            <div class="card-body text-center">
+                                <p style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Empowerment</p>
+                                <p style="color: rgba(142, 147, 156, 1);text-align:justify;">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card p-4" style="background-color:rgba(235, 237, 240, 1);border:none;">
+                            <img src="deversity.png" alt="" class="img-fluid dicover-img"
+                                >
+                            <div class="card-body text-center">
+                                <p style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Diversity and
+                                    Inclusion</p>
+                                <p style="color: rgba(142, 147, 156, 1);text-align:justify;">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card p-4" style="background-color:rgba(235, 237, 240, 1);border:none;">
+                            <img src="customercentricity.png" alt="" class="img-fluid dicover-img"
+                                >
+                            <div class="card-body text-center">
+                                <p style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">
+                                    Customer-Centricity</p>
+                                <p style="color: rgba(142, 147, 156, 1);text-align:justify;">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                        <div class="card p-4" style="background-color:rgba(235, 237, 240, 1);border:none;">
+                            <img src="collaboration.png" alt="" class="img-fluid dicover-img"
+                                >
+                            <div class="card-body text-center">
+                                <p style="color:rgba(51, 51, 51, 1);font-weight:800;font-size:1.2rem;">Collaboration
+                                </p>
+                                <p style="color: rgba(142, 147, 156, 1);text-align:justify;">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit,</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+        </div>
+    </div>
+</div>
+<!---The Our discovery section end--->
+
+<!--The Our best choice section start-->
+<div class="our-choice-section pt-5 pb-3 bg-white">
+    <div class="container" style="max-width:1400px;">
+        <div class="row">
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <img src="best-choicimage.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3 pt-4">
+                        <h2 style="color:rgba(51, 51, 51, 1);font-weight:700;line-height:3rem;">Exploring Why We Are
+                            <br> Your Best Choice
+                        </h2>
+                        <p style="color: rgba(142, 147, 156, 1);line-height:1.2rem;text-align:justify;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+
+                        <div class="d-flex gap-5 mt-5"><label for=""
+                                style="color:rgba(7, 8, 40, 1);font-weight:500;">High Success Rate
+                            </label>
+                            <label for="" id="percentage"
+                                style="color:rgba(7, 8, 40, 1);font-weight:500;">95%</label>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Black example" aria-valuenow="95"
+                            aria-valuemin="0" aria-valuemax="100">
+
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                        <div class="d-flex gap-5 mt-4"><label for=""
+                                style="color:rgba(7, 8, 40, 1);font-weight:500;">Extensive Network
+                            </label>
+                            <label for="" id="percentage"
+                                style="color:rgba(7, 8, 40, 1);font-weight:500;">90%</label>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Black example" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">
+
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+
+                        <div class="d-flex gap-5 mt-4"><label for=""
+                                style="color:rgba(7, 8, 40, 1);font-weight:500;">User Satisfaction
+                            </label>
+                            <label for="" id="percentage"
+                                style="color:rgba(7, 8, 40, 1);font-weight:500;margin-left:0.8rem;">98%</label>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Black example" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">
+
+                            <div class="progress-bar" style="width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+        </div>
+    </div>
+</div>
+<!--The Our best choice section ends-->
+
+<!--The Testomonial start section -->
+<div id="testomonial-section">
+    <div class="container" style="max-width:1400px;">
+        <div class="row">
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-10 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <h2 style="color:rgba(51, 51, 51, 1);font-weight:900;">Testimonials</h2>
+                        <p style="color:rgba(142, 147, 156, 1);line-height:2rem;">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3 pt-4">
+                        <a href="" id="seellbtn">See All</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <img src="testomonial.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                <div class="card mt-5" style="border:none;background-color:rgba(249, 249, 249, 1);">
+                                    <div class="d-flex mx-2">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="color:rgba(142, 147, 156, 1);">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt </p>
+                                        <div class="card-img-user d-flex gap-2">
+                                            <img src="testomonial-user.png" alt=""
+                                                class="img-fluid" style="height:3rem;width:3rem;border-radius:100px;">
+                                            <p style="color:rgba(7,8,40,1);font-weight:700;">Leigh Elodie</p>
+                                        </div>
+                                        <p
+                                            style="color:rgba(196,197,200,1);font-size:0.7rem;margin-left:3.5rem;margin-top:-1.5rem;">
+                                            Marketing Manager</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                <div class="card mt-5" style="border:none;background-color:rgba(249, 249, 249, 1);">
+                                    <div class="d-flex mx-2">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="color:rgba(142, 147, 156, 1);">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt </p>
+                                        <div class="card-img-user d-flex gap-2">
+                                            <img src="testomonial-user1.png"
+                                                alt="" class="img-fluid"
+                                                style="height:3rem;width:3rem;border-radius:100px;">
+                                            <p style="color:rgba(7,8,40,1);font-weight:700;">Shannon Ember</p>
+                                        </div>
+                                        <p
+                                            style="color:rgba(196,197,200,1);font-size:0.7rem;margin-left:3.5rem;margin-top:-1.5rem;">
+                                            Marketing Manager</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                <div class="card mt-5" style="border:none;background-color:rgba(249, 249, 249, 1);">
+                                    <div class="d-flex mx-2">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="color:rgba(142, 147, 156, 1);">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt </p>
+                                        <div class="card-img-user d-flex gap-2">
+                                            <img src="testomonial-user2.png"
+                                                alt="" class="img-fluid"
+                                                style="height:3rem;width:3rem;border-radius:100px;">
+                                            <p style="color:rgba(7,8,40,1);font-weight:700;">Betsy Sue</p>
+                                        </div>
+                                        <p
+                                            style="color:rgba(196,197,200,1);font-size:0.7rem;margin-left:3.5rem;margin-top:-1.5rem;">
+                                            Marketing Manager</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                                <div class="card mt-5" style="border:none;background-color:rgba(249, 249, 249, 1);">
+                                    <div class="d-flex mx-2">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+                                        <img src="Starc.png" alt=""
+                                            class="img-fluid">
+
+                                    </div>
+                                    <div class="card-body">
+                                        <p style="color:rgba(142, 147, 156, 1);">Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt </p>
+                                        <div class="card-img-user d-flex gap-2">
+                                            <img src="testomonial-user3.png"
+                                                alt="" class="img-fluid"
+                                                style="height:3rem;width:3rem;border-radius:100px;">
+                                            <p style="color:rgba(7,8,40,1);font-weight:700;">Herbert Rocky</p>
+                                        </div>
+                                        <p
+                                            style="color:rgba(196,197,200,1);font-size:0.7rem;margin-left:3.5rem;margin-top:-1.5rem;">
+                                            Marketing Manager</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--The Testomonial ends section -->
+
+<!--The Popup section start -->
+<!-- Vertically centered modal -->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Form on the right -->
+                        <div class="col-lg-8 col-sm-12">
+                            <div class="col-sm-12 mt-5 h-100">
+                                <h3>Let’s Make Payment</h3>
+                                <p class="form-label">To start your subscription, input your card details to make
+                                    payment.
+                                    You will be redirected to your bank's authorization page.</p>
+
+                                <form class="row g-3 mt-3">
+                                    <div class="col-10">
+                                        <label for="inputName" class="form-label">Cardholder's Name</label>
+                                        <input type="text" class="form-control" id="inputName"
+                                            placeholder="Enter Your Name">
+                                    </div>
+                                    <div class="col-10">
+                                        <label for="inputCardNumber" class="form-label" disabled>Card Number</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="inputCardNumber"
+                                                placeholder=" 0000-0000-0000-0000">
+                                            <!-- <span class="input-group-text">
+                                                                    <i class="bi bi-credit-card"></i>
+                                                                </span> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-10 row-inline">
+                                        <div class="col-5">
+                                            <label for="inputExpiry" class="form-label">Expiry</label>
+                                            <input type="text" class="form-control" id="inputExpiry"
+                                                placeholder="MM/YEAR">
+                                        </div>
+                                        <div class="col-5">
+                                            <label for="inputCVV" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="inputCVV"
+                                                placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <label for="inputDiscount" class="form-label">Discount Code</label>
+                                        <input type="text" class="form-control" id="inputDiscount"
+                                            placeholder="Apply">
+                                    </div>
+                                    <div class="col-10">
+                                        <button type="submit" class="btn mb-2"
+                                            style="background-color: #66bd00;">Pay</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Payment summary box on the left -->
+                        <div class="col-lg-3 col-sm-12 mt-5">
+                            <div class="payment-summary mt-3">
+                                <p class="mt-3">You’re paying</p>
+                                <h1 class="mx-3">£ 450.00</h1>
+
+                                <p class="mt-3">No. of Jobs</p>
+                                <div class="job-counter">
+                                    <h1>+</h1>
+                                    <input type="text" value="2" class="form-control">
+                                    <h1>-</h1>
+                                </div>
+
+                                <div class="discount-row mt-3">
+                                    <h6>Discounts & Offers</h6>
+                                    <p class="text-start">£ 0.00</p>
+                                </div>
+
+                                <hr>
+
+                                <!-- Left aligning Tax and Total -->
+                                <div class="payment-details">
+                                    <div class="d-flex">
+                                        <h6>Tax</h6>
+                                        <p class="text-start ms-auto">£ 0.00</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <h6>Total</h6>
+                                        <p class="text-start ms-auto">£ 450.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!---==============----------------The Footer Section start ===============================------->
+<div id="footer">
+    <div class="container" style="max-width:1200px;">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <h5 style="color:rgba(255,255,255,1);font-weight:800;">Contact Us</h5>
+                <p style="color: rgba(255,255,255,1);font-weight:400;text-align:justify;margin-top:0.7rem;">No. 2
+                    Saxon Business Park, <br>
+                    Owen Avenue, Priory Park West, <br>
+                    Hessle, Hull, HU13 3PD, England</p>
+                <p style="color: rgba(255,255,255,1);font-weight:400;text-align:justify;margin-top:-0.7rem;">EMAIL :
+                    info@jobsyoucantrust.com</p>
+                <div class="d-flex gap-3 pt-2">
+                    <img src="facebook.png" alt="" class="img-fluid">
+                    <img src="twitter.png" alt="" class="img-fluid">
+                    <img src="youtube.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12"></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <div class="link-footer">
+                    <a href="index.html" class="footer-link"> <img
+                            src="footerarrow.png" class="img-fluid" alt="">
+                        Home</a>
+                    <a href="" class="footer-link mt-3"> <img
+                            src="footerarrow.png" class="img-fluid" alt="">
+                        Contact Us</a>
+                    <a href="" class="footer-link mt-3"> <img
+                            src="footerarrow.png" class="img-fluid" alt="">
+                        Submit Your CV</a>
+                    <a href="" class="footer-link mt-3"> <img
+                            src="footerarrow.png" class="img-fluid" alt="">
+                        Video Tips</a>
+                    <a href="" class="footer-link mt-3"> <img
+                            src="footerarrow.png" class="img-fluid" alt="">
+                        Job Descriptions</a>
+                    <a href="" class="footer-link mt-3"> <img
+                            src="footerarrow.png" class="img-fluid" alt="">
+                        Terms & conditions-Plus</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 mb-3 text-center">
+                <img src="footerlogo.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-lg-8 col-md-8 col-sm-12 mb-3">
+                <p style="color:rgba(255,255,255,0.5);font-weight:200;font-size:0.8rem;text-align:justify;">OUR BEST
+                    WISHES GO TO ALL OUR RECRUITERS AD JOBSEEKERS</p>
+                <p style="color:rgba(255,255,255,0.5);font-weight:200;font-size:0.8rem;text-align:justify;">FROM ALL
+                    AT : www.JOBSYOUCANTRUST.COM Read More</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <p style="color:rgba(255,255,255,0.5);font-weight:200;font-size:0.8rem;line-height:3rem;">All
+                    Rights Reserved WWW.JOBSYOUCANTRUST.COM</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!---==============-------------The Footer Section ends ===============================------->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!--==========================The Bootstrap Js Ends======================-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+</body>
+</html>
